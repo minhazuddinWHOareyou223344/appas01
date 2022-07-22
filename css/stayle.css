@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aligncenter{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(244, 236, 236);
+    
+}
+
+body{
+    font-family: 'Open Sans', sans-serif; ;
+}
+ul{
+    list-style: none;
+    
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    color: #4c76ff;
+    font-weight: 400;
+    font-size: 28px;
+    position: relative;
+}
+.heading::after{
+    content: "";
+    width: 162px;
+    height: 9px;
+    background-image: url(./img/logo2.png);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -33px;
+}
+nav{
+  background-image: url(./img/banner1.jpg);
+height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+nav .logo{
+    color: white;
+    font-size: 19px;
+    padding: 25px 5px;
+}
+nav .logo span{
+    color:#788490;
+    font-size: 16px;
+}
+nav .manu ul li {
+    display: inline-block;
+    padding: 25px 18px;
+    position: relative;
+ 
+
+}
+nav .manu ul{
+    
+    text-align: right;
+}
+nav .logo{
+    width: 30%;
+}
+nav .manu {
+    width: 70%;
+    position: relative;
+}
+
+nav .rait{
+    color: white;
+margin: 30px;
+}
+nav .rait h1{
+    font-size: 62px;
+}
+nav .rait h2 span{
+    font-size: 48px;
+    color:#4871f1 ;
+}
+nav .rait h2{
+    font-size: 48px;
+
+}
+nav .rait p{
+    font-size: 18px;
+    color: #788490;
+}
+.card{
+    width: 30%;
+  
+
+padding: 0 20px;
+}
+.card h3{
+    color:#062033 ;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 10px;
+}
+.card h3 span{
+    font-size: 20px;
+    color: #4871f1;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #4871f1;
+    border-radius: 50%;
+    text-align: center;
+   
+}
+.card p{
+    text-align: center;
+    margin: 30px;
+    padding: 0 2px;
+    
+}
+#phone{
+    margin: 95px 110px ;
+}
+#phone p{
+    padding: 0 110px;
+    text-align: center;
+}
+.onecard,.imgcard,.twoocard{
+    width: 33%;
+}
+#phone .imgcard{
+    padding: 30px;
+}
+#phone  .card p{
+    padding: 0 0 ;
+    display: inline-block;
+    margin: 0 50px;
+    width: 100%;
+    
+ 
+}
+
+#phone .onecard .pcard  span{
+   
+    margin: 30px;
+    display: inline-block;
+    padding: 0 20px;
+
+}
+#phone .pcard span{
+    font-size: 34px;
+    color:#a9a8a2 ;
+}
+#phone .twocard .pcard{
+    width: 30%;
+   
+}
+#phone .bcard{
+    margin: 20px 0;
+}
+#phone .bcard h3{
+    text-align: center;
+    padding: 0 50px;
+    display: block;
+}
+#phone .bcard  span {
+    text-align: right;
+    font-size: 34px;
+    color: #788490;
+   
+}
+#phone .bcard p{
+    margin: 15px 0;
+}
+#works .sworks p{
+    width: 90%;
+    text-align: center;
+    margin: 80px 0;
+}
+#works .amanu  a{
+    color: rgb(174, 26, 26);
+   
+    display: inline-block;
+    padding: 0 25px;
+}
+#works .amanu li {
+display: inline-block;
+text-align: center;
+
+}
+#works .amanu li a{
+    text-align: center;
+    margin: 80px 0;
+   display: inline-block;
+
+}
+
+   
+
+#works .amanu ul li ::before{
+    content: "";
+    background-color: #4c76ff;
+    position: absolute;
+   width: 80px;
+   height: 3px;
+   text-align: center;
+visibility: hidden;
+   opacity: 0;
+   transition: .500ms;
+
+}
+
+#works .amanu ul :hover ::before {
+opacity: 1;
+visibility: visible;
+}
+
+#works .row{
+    width: 100%;
+    justify-content: center;
+}
+#works .amanu{
+    margin: auto;
+}
+#kano .kanocard{
+    width: 25%;
+    position: relative;
+}
+#kano .kanocard img{
+    width: 100%;
+    display: block;
+}
+#kano{
+    margin: 80px 0;
+}
+ #kano .kanocard .overlay{
+   color: beige;
+   position: absolute;
+   background-color: #4c76ffba;
+   top: 0;
+   bottom:0;
+   left: 0;
+   right: 0;
+   text-align: center;
+  padding: 80px 0;
+  opacity:0 ;
+ 
+  transition: .500ms;
+ }
+ #kano .kanocard .overlay span{
+    font-size: 40px;
+ }
+ #kano .kanocard :hover .overlay{
+    opacity: 1;
+    visibility: visible;
+ }
+ #kano .kanocard :hover{
+    opacity: 1;
+    visibility: visible;
+ }
+ .meet P{
+    margin: 80px 0;
+    width: 80%;
+    text-align: center;
+   right: 20px;
+ }
+ #meet .mancard{
+    width: 25%;
+    position: relative;
+ }
+ #meet .mancard .over{
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 70px;
+    background-color: #4c76ffbf;
+  text-align: center;
+ padding: 20px;
+   transition: .500ms;
+   opacity: 0;
+ }
+ #meet .mancard :hover{
+    opacity: 1;
+ }
+ #some{
+    margin: 120px 0;
+    position: relative;
+ }
+ #some .somes {
+  
+    background-image: url(./img/night.jpg);
+    width: 100% ;
+    height: 450px;
+ }
+ #some h3{
+ 
+    margin: auto;
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #some h2 {
+    color: aliceblue;
+   margin: auto;
+    cursor: pointer;
+    padding: 0 20px;
+    position: absolute;
+    right: 450px;
+    margin: 50px 40px;
+  }
+  #some h2 i{
+    display: inline-block;
+    padding: 50px 5opx;
+    margin: 70px 35px;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+
+  }
+  #some h2 i {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   border: solid cadetblue;
+    display: inline-block;
+   line-height: 100PX;
+  }
+  #lets p{
+    font-size: 20px ;
+    text-align: center;
+    margin: 30px 0;
+  }
+  #lets .say{
+    width: 30%;
+  }
+  #lets .say p{
+    width:50%;
+  }
+  #lets .says{
+    width: 70%;
+  }
+  #map .maps img{
+  width: 100%;
+  }
+  #map{
+    margin: 110px 0;
+  }
+  #what .minhaz img{
+    width: 500px;
+    
+  }
+  #what .khan img{
+    display: inline-block;
+  width: 1000px;
+  padding: 0 200px;
+  }
+  #what{
+    margin: 90px 0;
+    position: relative;
+    margin: auto;
+  }
+  #what .minhaz  .overl  {
+    color: beige;
+    position: absolute;
+    background-color: #0e0f0d80;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: o;
+
+   
+  }
+  #what .minhaz  .overl h2{
+    font-size: 80px;
+    color: rgb(6, 111, 176);
+   z-index: 1;
+    font-weight: 800;
+  }
